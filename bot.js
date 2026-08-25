@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-const nextCheck = 30;
+const nextCheck = 5;
 async function checkCaptchaCheckbox() {
     let browser;
 
@@ -24,7 +24,7 @@ async function checkCaptchaCheckbox() {
         const page = await browser.newPage();
 
         try {
-            await page.goto('https://domain.com/h-catcha.php', {
+            await page.goto('https://api.teamcyber71.online/SV-MAIN/captchax.php', {
                 waitUntil: 'networkidle2',
                 timeout: 30000
             });
