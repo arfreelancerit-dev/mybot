@@ -4,6 +4,7 @@
   "description": "Automated hCaptcha solving script using Puppeteer",
   "main": "captcha-automation.js",
   "scripts": {
+    "build": "npx puppeteer browsers install chrome",
     "start": "node captcha-automation.js",
     "test": "echo Error: no test specified && exit 1"
   },
